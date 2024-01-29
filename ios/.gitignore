@@ -1,3 +1,16 @@
+# Exceptions to above rules.
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+scripts
+.env
 **/dgph
 *.mode1v3
 *.mode2v3
@@ -15,6 +28,17 @@ Icon?
 profile
 xcuserdata
 **/.generated/
+
+ServiceDefinitions.json
+Runner/GeneratedPluginRegistrant.*
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
 Flutter/App.framework
 Flutter/Flutter.framework
 Flutter/Flutter.podspec
@@ -24,11 +48,15 @@ Flutter/app.flx
 Flutter/app.zip
 Flutter/flutter_assets/
 Flutter/flutter_export_environment.sh
-ServiceDefinitions.json
-Runner/GeneratedPluginRegistrant.*
 
-# Exceptions to above rules.
-!default.mode1v3
-!default.mode2v3
-!default.pbxuser
-!default.perspectivev3
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# iOS related
+/ios/Runner.xcodeproj/project.pbxproj
+/ios/Podfile.lock
+/ios/Runner/GoogleService-Info.plist
+**/ios/Flutter/.last_build_id

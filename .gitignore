@@ -9,6 +9,25 @@
 .history
 .svn/
 migrate_working_dir/
+scripts
+**/dgph
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+**/*sync/
+.sconsign.dblite
+.tags*
+**/.vagrant/
+**/DerivedData/
+Icon?
+**/Pods/
+**/.symlinks/
+profile
+xcuserdata
+**/.generated/
+.env
 
 # IntelliJ related
 *.iml
@@ -19,7 +38,7 @@ migrate_working_dir/
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-#.vscode/
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -31,6 +50,12 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+/coverage
+.fvm/flutter_sdk
+scripts/fvm/
 
 # Symbolication related
 app.*.symbols
@@ -42,3 +67,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/google-services.json
+android/certificates/*
+android/build
+!/android/certificates/
+android/fastlane/report.xml
+
+# iOS related
+/ios/Runner.xcodeproj/project.pbxproj
+/ios/Podfile.lock
+/ios/Runner/GoogleService-Info.plist
+**/ios/Flutter/.last_build_id
